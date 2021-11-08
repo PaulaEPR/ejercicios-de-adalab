@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ejercicio Box Model</title>
+</head>
+<body>
+    <h2>Caja con <code>box-sizing: content-box</code></h2>
+    <div><img src="https://fakeimg.pl/100x100/" alt="content-box"></div>
+    <!-- Con border-box se desborda la imagen, porque para el tamaño del contenedor se utiliza las medidas de ancho y alto como el total entre el margen, el padding, el borde, y los hijos que haya dentro. Como el hijo que hay dentro (img) ya tiene un tamaño de 100x100 y el total debería ser 100x100, se descborda, porque las imágenes son inline-block, es decir, ocupa el ancho de la caja pero puede tener un alto, ancho padding y márgenes verticales. -->
+    <h2>Caja con <code>box-sizing: border-box</code></h2>
+    <div class="border-box"><img src="https://fakeimg.pl/100x100/" alt="border-box"></div>
+    
+</body>
+</html>

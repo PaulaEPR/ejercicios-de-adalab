@@ -1,0 +1,32 @@
+/* Ej1 */
+.verde {
+    background-color: greenyellow;
+}
+
+.naranja {
+    background-color: coral;
+}
+
+/* Ej2 */
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.none {
+    display: none;
+}

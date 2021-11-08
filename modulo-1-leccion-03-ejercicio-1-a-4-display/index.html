@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ejercicios sobre display</title>
+</head>
+
+<body>
+    <h2>Ejercicio 1 - Marcando</h2>
+    <!-- Resaltar información importante -->
+    <p>Lorem ipsum, <mark>dolor sit amet consectetur</mark> adipisicing elit. Repudiandae voluptate sed aperiam ex
+        laboriosam odit natus vitae molestias iste consequatur asperiores laborum nobis ut, eaque consequuntur, vero
+        repellendus deserunt. Debitis.</p>
+    <p>Hic eaque exercitationem cupiditate ipsam delectus. Maiores ad temporibus vel, ab ducimus vitae labore doloribus
+        expedita voluptas exercitationem? Voluptate voluptatum nesciunt aspernatur ab, iusto <mark class="verde">earum
+            magnam optio</mark> pariatur nostrum tenetur?</p>
+    <p>Minima doloremque dolores a, reiciendis cum consectetur autem corporis sunt at accusantium aspernatur eaque
+        eligendi earum enim inventore! Natus rem ullam <mark class="naranja">suscipit quo blanditiis</mark> at fuga
+        beatae quia laboriosam sapiente?</p>
+
+    <h2>Ejercicio 2 - Displays</h2>
+    <!-- Primera prueba: Cada uno con un display distinto -->
+    
+    <section>
+        <h3>Cada uno con un display distinto</h3>
+        <div class="box block">Block</div>
+        <div class="box inline">Inline</div>
+        <div class="box inline-block">Inline-Block</div>
+        <div class="box none">None</div>
+    </section>
+
+    <!-- Segunda prueba: Cada uno con el mismo display -->
+    
+    <section>
+        <h3>Cada uno con display block</h3>
+        <div class="box block">Block</div>
+        <div class="box block">Block</div>
+        <div class="box block">Block</div>
+        <div class="box block">Block</div>
+    </section>
+
+    <section>
+        <h3>Cada uno con display inline</h3>
+        <div class="box inline">Inline</div>
+        <div class="box inline">Inline</div>
+        <div class="box inline">Inline</div>
+        <div class="box inline">Inline</div>
+    </section>
+
+    <section>
+        <h3>Cada uno con display inline-block</h3>
+        <div class="box inline-block">Inline-Block</div>
+        <div class="box inline-block">Inline-Block</div>
+        <div class="box inline-block">Inline-Block</div>
+        <div class="box inline-block">Inline-Block</div>
+    </section>
+
+    <h2>Ejercicio 3 - Imagen en un párrafo</h2>
+    <!-- Divide el bloque del párrafo, sin dejar márgenes entre ello -->
+    <h4>Con display block</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <img class="block" src="https://fakeimg.pl/100x100/">Inventore aspernatur ad quia, molestias, quidem debitis quos odio doloremque illo, autem quae repellendus repellat facere! Dolorum harum dolorem aliquam expedita alias!</p>
+    <!-- No divide el bloque del párrafo pero lo desborda -->
+    <h4>Con display inline</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <img class="inline" src="https://fakeimg.pl/100x100/">Inventore aspernatur ad quia, molestias, quidem debitis quos odio doloremque illo, autem quae repellendus repellat facere! Dolorum harum dolorem aliquam expedita alias!</p>
+    <!-- Igual que con display inline -->
+    <h4>Con display inline-block</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <img class="inline-block" src="https://fakeimg.pl/100x100/">Inventore aspernatur ad quia, molestias, quidem debitis quos odio doloremque illo, autem quae repellendus repellat facere! Dolorum harum dolorem aliquam expedita alias!</p>
+
+    <h2>Ejercicio 4 - Imagen entre párrafos</h2>
+    <!-- Es parecido al ejercicio 3 con display block, pero esta vez está más separado porque los párrafos tienen por defecto márgenes -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt eligendi sunt enim odit officia eos voluptate quo delectus, alias veritatis amet sit unde omnis cumque totam! Temporibus, dolor repellat.</p>
+    <img class="inline-block" src="https://fakeimg.pl/200x200/">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore necessitatibus ipsa nihil nemo nisi, pariatur rem soluta vel numquam quas blanditiis veritatis eos beatae saepe ea! Similique nam excepturi blanditiis?</p>
+</body>
+
+</html>

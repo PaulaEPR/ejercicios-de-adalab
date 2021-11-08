@@ -1,0 +1,84 @@
+/* Explicación */
+.explicacion {
+    width: 500px;
+    margin: 20px;
+}
+
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+    
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: slategrey;
+    border-radius: 5px;
+    color: white;
+    padding: 2px 4px;
+}
+
+/* Flex comunes */
+
+.container {
+  width: 500px;
+  height: 500px;
+  margin: 10px;
+  background-color: black;
+  border: black 2px solid;
+  display: flex;
+
+}
+
+.item {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  color: black;
+  border: black 2px solid;
+  padding: 10px;
+}
+
+/* Flex específico contenedores*/
+
+.container-row {
+    flex-direction: row;
+}
+
+.container-column {
+    flex-direction: column;
+}
+
+/* Flex específico items*/
+
+.item-1 {
+  background-color: red;
+}
+
+.item-2 {
+  background-color: orangered;
+}
+
+.item-3 {
+  background-color: gold;
+
+}
+
+.item-4 {
+  background-color: limegreen;
+}
+
+.item-5 {
+  background-color: lightseagreen;
+}
+
+.item-6 {
+  background-color: rgb(48, 48, 192);
+
+}
+
+.item-7 {
+  background-color: blueviolet;
+}

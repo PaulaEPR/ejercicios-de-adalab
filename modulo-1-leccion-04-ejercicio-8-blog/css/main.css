@@ -1,0 +1,100 @@
+/* Variables */
+
+:root{
+    --colorOscuro: rgb(51, 51, 51);
+    --colorClaro: rgb(231, 231, 231);
+    --colorMedio: rgb(202, 202, 202);
+ }
+
+/* FlexBox Principal */
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bloque {
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin: 0;
+}
+
+
+/* Header - Menú */
+
+header.bloque {
+  background-color: var(--colorOscuro);
+}
+
+.contenido.menu {
+  color: var(--colorClaro);
+  justify-content: space-between;
+}
+
+.titulo {
+  font-weight: 400;
+}
+
+.enlaces-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+.enlaces-menu a {
+  color: var(--colorClaro);
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Main - Artículos */
+
+main.bloque {
+  background-color: var(--colorClaro);
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.contenido.articulos {
+    justify-content: space-between;
+    align-self: flex-start;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer - Info */
+
+footer.bloque {
+  background-color: var(--colorClaro);
+  border-top: 2px solid var(--colorMedio);
+}
+
+.contenido.info {
+  color: var(--colorOscuro);
+  justify-content: space-between;
+}
+
+.enlaces-footer {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .enlaces-footer a {
+    color: var(--colorOscuro);
+    text-decoration: none;
+    list-style-type: none;
+  }

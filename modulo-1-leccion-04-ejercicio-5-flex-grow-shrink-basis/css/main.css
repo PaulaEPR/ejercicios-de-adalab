@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.bloque {
+    padding: 10px;
+    box-sizing: border-box;
+    align-content: stretch;
+    min-height: 60px;
+}
+
+p.nombre {
+    margin: 0;
+}
+
+
+header {
+    background-color: lightgray;
+}
+
+main {
+    background-color: grey;
+    flex-grow: 2;
+}
+
+footer {
+    background-color: gold;
+}
+
+
