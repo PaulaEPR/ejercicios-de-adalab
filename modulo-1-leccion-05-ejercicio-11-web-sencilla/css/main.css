@@ -1,0 +1,51 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Poner en línea el footer */
+
+.rrss, ul, .name {
+    display: inline-block
+}
+
+/* Footer, colores y enlaces */
+
+.fab, .name {
+    color:grey;
+}
+
+li.rrss a {
+    margin: 0 5px;
+}
+
+/* Enlaces globales */
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    color: black;
+}
+
+/* Aviso de cookies */
+
+.cookies p {
+    padding: 10px;
+}
+
+.cookies {
+    background-color: lightgrey;
+    position: fixed;
+    float: bottom;
+    bottom: 0px;
+    min-height: 100px;
+}
+
+/* Desplazar el footer para que se vea, debería ser 100px
+pero si no con la página pequeña no se ve */
+
+footer {
+    margin-bottom: 150px;
+}

@@ -1,10 +1,10 @@
 /* Variables */
 
-:root{
-    --colorOscuro: rgb(51, 51, 51);
-    --colorClaro: rgb(231, 231, 231);
-    --colorMedio: rgb(202, 202, 202);
- }
+:root {
+  --colorOscuro: rgb(51, 51, 51);
+  --colorClaro: rgb(231, 231, 231);
+  --colorMedio: rgb(202, 202, 202);
+}
 
 /* FlexBox Principal */
 
@@ -28,7 +28,6 @@ body {
   width: 600px;
   margin: 0;
 }
-
 
 /* Header - Menú */
 
@@ -62,17 +61,36 @@ header.bloque {
 main.bloque {
   background-color: var(--colorClaro);
   flex-grow: 2;
-  display: flex;
   flex-direction: column;
-  align-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contenido.autor {
+  justify-content: space-between;
+  padding-top: 30px;
 }
 
 .contenido.articulos {
-    justify-content: space-between;
-    align-self: flex-start;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido.articulos p {
+  margin-bottom: 20px;
+}
+
+.contenido.articulos h1 {
+  margin-bottom: 20px;
+}
+
+/* No consigo hacer que el footer se
+vaya abajo cuando hay mucho texto */
+
+.hidden {
+  display: none;
+  visibility: hidden;
 }
 
 /* Footer - Info */
@@ -88,13 +106,13 @@ footer.bloque {
 }
 
 .enlaces-footer {
-    list-style-type: none;
-    display: flex;
-    gap: 10px;
-  }
-  
-  .enlaces-footer a {
-    color: var(--colorOscuro);
-    text-decoration: none;
-    list-style-type: none;
-  }
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+.enlaces-footer a {
+  color: var(--colorOscuro);
+  text-decoration: none;
+  list-style-type: none;
+}
