@@ -1,0 +1,178 @@
+/* Variables */
+
+:root {
+  --colorOscuro: rgb(51, 51, 51);
+  --colorClaro: rgb(231, 231, 231);
+  --colorMedio: rgb(202, 202, 202);
+}
+
+/* FlexBox Principal */
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bloque {
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin: 0;
+}
+
+/* Header - Menú */
+
+header.bloque {
+  background-color: var(--colorOscuro);
+}
+
+.contenido.menu {
+  color: var(--colorClaro);
+  justify-content: space-between;
+}
+
+.titulo {
+  font-weight: 400;
+}
+
+.enlaces-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+.enlaces-menu a {
+  color: var(--colorClaro);
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Main - Artículos */
+
+main.bloque {
+  background-color: var(--colorClaro);
+  flex-grow: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contenido.autor {
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.contenido.articulos {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido.articulos p {
+  margin-bottom: 20px;
+}
+
+.contenido.articulos h1 {
+  margin-bottom: 20px;
+}
+
+/* No consigo hacer que el footer se
+vaya abajo cuando hay mucho texto */
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* Footer - Info */
+
+footer.bloque {
+  background-color: var(--colorClaro);
+  border-top: 2px solid var(--colorMedio);
+}
+
+.contenido.info {
+  color: var(--colorOscuro);
+  justify-content: space-between;
+}
+
+.enlaces-footer {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+.enlaces-footer a {
+  color: var(--colorOscuro);
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Modal */
+
+.modal {
+  position: absolute;
+  background-color: rgba(65, 65, 65, 0.781);
+  width: 100vw;
+  height: 100vh;
+}
+
+.cartel {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  border-radius: 5px;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, 50%);
+  padding: 30px;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.cartel p {
+  margin-bottom: 40px;
+  font-size: 12px;
+}
+
+.rechazar {
+  border: 2px black solid;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 10px;
+
+}
+
+.cartel a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.suscribir {
+  border: 2px black solid;
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 10px;
+
+}
+
+.cartel a.suscribir {
+  text-decoration: none;
+  color: white;
+}

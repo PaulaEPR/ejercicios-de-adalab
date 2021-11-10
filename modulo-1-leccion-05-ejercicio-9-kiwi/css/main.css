@@ -1,0 +1,37 @@
+body {
+    border: 8px black solid;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+    margin-top: 106px;
+}
+
+.autor {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.titular {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 27px;
+}
+
+a {
+    padding: 8px 16px;
+    margin-left: -16px;
+}
