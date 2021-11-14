@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+}
+
+/* Mobile */
+@media all and (max-width: 768px) {
+  .container {
+    margin: 0 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+/* Tablet */
+@media all and (min-width: 768px) and (max-width: 1140px) {
+  .container {
+    margin: 30px 40px 0;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+/* Desktop */
+@media all and (min-width: 1140px) {
+    .container {
+      max-width: 750px;
+      margin: 190px auto 0;
+    }
+  
+    h1 {
+      font-size: 42px;
+      font-weight: bold;
+    }
+  
+    p {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+  

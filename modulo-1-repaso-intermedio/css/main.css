@@ -1,0 +1,90 @@
+:root {
+  --colorPpal: #cc212a;
+  --colorBckg: white;
+  --fontPpal: "Montserrat", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Color & Typography */
+
+.main {
+  background-color: var(--colorBckg);
+}
+
+.claim {
+  color: var(--colorPpal);
+  font-family: var(--fontPpal);
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 1em;
+}
+
+.footer {
+  background-color: var(--colorBckg);
+  font-family: var(--fontPpal);
+  border-top: 3px solid var(--colorPpal);
+}
+
+.icon {
+  background-color: var(--colorPpal);
+  color: var(--colorBckg);
+  font-weight: 700;
+}
+
+.info {
+  font-weight: 500;
+}
+
+/* Position & Flexbox */
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 50px;
+  transform: translateY(-50%);
+}
+
+.info {
+  margin-top: -5px;
+}
+
+/* Responsive */
+
+@media all and (min-width: 768px) {
+  .footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 25px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .icon {
+    transform: none;
+  }
+}
