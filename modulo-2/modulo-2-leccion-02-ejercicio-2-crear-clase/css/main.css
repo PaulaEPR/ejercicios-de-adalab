@@ -1,0 +1,10 @@
+.main {
+    background-color: lightblue;
+}
+.main__title {
+    color: blue;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.js-super-wave {
+    color: red;
+}
