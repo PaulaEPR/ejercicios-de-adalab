@@ -45,12 +45,14 @@ function averageAge() {
 
 function theYoungest() {
   let young = adalabers[0].age;
+  let name = adalabers[0].name
   for (let i = 0; i < adalabers.length; i++) {
     if (adalabers[i].age < young) {
       young = adalabers[i].age;
+      name = adalabers[i].name
     }
   }
-  console.log("La adalaber más joven tiene: " + young);
+  console.log(`La adalaber más joven tiene ${young} años y se llama ${name}`);
 }
 
 function countDesigners() {
