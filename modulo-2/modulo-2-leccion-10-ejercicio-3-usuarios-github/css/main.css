@@ -1,0 +1,8 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.js-photo {
+  width: 200px;
+  border: 2px grey solid;
+}

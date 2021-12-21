@@ -1,0 +1,16 @@
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.js-select {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.js-img-section {
+  display: flex;
+}
+
+.js-img {
+  height: 300px;
+}

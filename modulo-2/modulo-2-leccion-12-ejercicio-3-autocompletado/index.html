@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>Autocompletado</title>
+</head>
+
+<body>
+  <h1 class="title">Autocompletado de formularios</h1>
+  <form action="POST" class="form">
+    <select name="select" class="js-select">
+      <option value="0" selected hidden>Elige</option>
+      <option value="1">Usuario 1</option>
+      <option value="2">Usuario 2</option>
+      <option value="3">Usuario 3</option>
+    </select>
+    <label for="firstName" class="label">Nombre:</label>
+    <input type="text" id="firstName" name="firstName" class="input js-input">
+    <label for="lastName" class="label">Apellido:</label>
+    <input type="text" id="lastName" name="lastName" class="input js-input">
+    <label for="phone" class="label">Teléfono:</label>
+    <input type="text" id="phone" name="phone" class="input js-input">
+  </form>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
